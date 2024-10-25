@@ -1,0 +1,18 @@
+backend:
+    cloudProvider: genezio-cloud
+    functions:
+        - entry: index.mjs
+          handler: handler
+          name: express-getting-started-function
+          path: ./
+          type: aws
+    language:
+        name: js
+        packageManager: npm
+    path: ./
+    scripts:
+        deploy:
+            - npm install
+name: express-new-token
+region: eu-central-1
+yamlVersion: 2
